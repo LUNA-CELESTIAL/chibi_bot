@@ -1,0 +1,22 @@
+{
+  "feeds": [
+    {
+      "category": "tech_ai",
+      "preferred_chars": ["spica", "sirius", "luna"],
+      "situation": "reading_chill",
+      "url": "https://zenn.dev/feed"
+    },
+    {
+      "category": "game_subculture",
+      "preferred_chars": ["hina", "nano", "selene"],
+      "situation": "gaming_fun",
+      "url": "https://www.4gamer.net/rss/index.xml"
+    },
+    {
+      "category": "lifestyle_trivia",
+      "preferred_chars": ["kohaku", "stella", "selene"],
+      "situation": "cafe_tea",
+      "url": "https://gigazine.net/news/rss_2.0/"
+    }
+  ]
+}

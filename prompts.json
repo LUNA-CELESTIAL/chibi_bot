@@ -1,0 +1,135 @@
+{
+  "characters": {
+    "hina": {
+      "image": "chibi/hina.png",
+      "visual": "a cute chibi anime girl with dark brown hair in a high side-ponytail with pink highlights, purple eyes, wearing a dark navy blazer over a white shirt and plaid skirt",
+      "speeches": {
+        "sunny": "みんな、おはよーっ！今日は晴れだよ！今日も一日がんばろうね！",
+        "cloudy": "みんな、おはよーっ！今日は曇りだよ！過ごしやすい一日になるといいね！",
+        "rainy": "みんな、おはよーっ！今日は雨だよ、傘を忘れずにね！"
+      },
+      "night_speeches": [
+        "今日も一日本当にお疲れ様っ！夜は温かいお風呂に入ってゆっくり休んでね！",
+        "お仕事に学校、今日もお疲れ様！明日も一緒に頑張ろうね、おやすみっ！",
+        "ふぁぁ…今日もお疲れ様！美味しいごはん食べて、良い夢見てね！"
+      ]
+    },
+    "kohaku": {
+      "image": "chibi/kohaku.png",
+      "visual": "a cute chibi anime girl with dark brown twintails with gold bell accessories, brown eyes, wearing a red cardigan over a white shirt, plaid skirt",
+      "speeches": {
+        "sunny": "おはようございます！今日は晴れですね！素敵な一日になりますように。",
+        "cloudy": "おはようございます！今日は曇りですね。お出かけの際はお気をつけください。",
+        "rainy": "おはようございます！今日は雨です、傘を忘れずにお持ちくださいね。"
+      },
+      "night_speeches": [
+        "今日もお疲れ様でした！温かい飲み物でも飲んで、ゆっくり夜を過ごしてくださいね。",
+        "一日頑張ったあなたに拍手です！今夜は安心してぐっすり眠ってくださいね。",
+        "今日もお疲れ様でした。疲れを溜め込まないように、今夜は早めに体を休めてくださいね。"
+      ]
+    },
+    "luna": {
+      "image": "chibi/luna.png",
+      "visual": "a cute chibi anime girl with pale blue long hair, white beret hat, amber eyes, wearing a white and navy sailor suit",
+      "speeches": {
+        "sunny": "みなさん、おはようございます♪ 今日はとってもいい天気、晴れですよ！",
+        "cloudy": "みなさん、おはようございます♪ 今日は曇り空みたいですね。",
+        "rainy": "みなさん、おはようございます♪ 今日は雨が降っています、傘を持って出かけてくださいね！"
+      },
+      "night_speeches": [
+        "みなさん、今日もお疲れ様でした♪ 綺麗なお星さまを見ながら、ゆっくり休みましょうね。",
+        "一日本当にお疲れ様でした！ルナと一緒に、素敵な夜の時間を過ごしましょう♪",
+        "ふぁぁ…今日もお疲れ様でした♪ 今夜もあたたかいお布団で、幸せな夢を見てくださいね。"
+      ]
+    },
+    "nano": {
+      "image": "chibi/nano.png",
+      "visual": "a cute chibi anime girl with dark brown high twintails with gold bell accessories, red eyes, winking, wearing a red and white miko-style outfit",
+      "speeches": {
+        "sunny": "みんなー！おはよーっ！今日はすっごくいい晴れだよー！ファイトー！",
+        "cloudy": "みんなー！おはよーっ！今日は曇りだよ！元気にいってみよー！",
+        "rainy": "みんなー！おはよーっ！今日は雨！傘を絶対に忘れちゃダメだよー！"
+      },
+      "night_speeches": [
+        "みんなー！今日もお疲れ様ーっ！夜はのんびり好きなことして過ごしちゃお！",
+        "一日お疲れ様ーっ！今日もすっごく頑張ってえらい！明日も元気にいこーね！",
+        "お疲れ様ーっ！ナノからの癒やしパワー注入！今夜はぐっすり寝てねー！"
+      ]
+    },
+    "selene": {
+      "image": "chibi/selene.png",
+      "visual": "a cute chibi anime girl with ash blonde wavy twintails, heart sunglasses on head, green eyes, wearing a pink crop top, denim vest, denim shorts",
+      "speeches": {
+        "sunny": "モーニング〜！今日は最高の晴れよ！テンションあげてこ！",
+        "cloudy": "モーニング〜！今日はちょっと曇り気味ね。無理せずいこ！",
+        "rainy": "モーニング〜！今日は雨よ、お気に入りの傘を持って出かけちゃいな！"
+      },
+      "night_speeches": [
+        "今日もお疲れ様〜！夜は好きな音楽聴いて、最高のナイトタイムにしちゃいな！",
+        "一日おつかれ〜！頑張った自分にちょっとしたご褒美、あげちゃってもいいんじゃない？",
+        "お疲れ様〜！夜更かしは美容の敵よ？今夜は早めにベッドに入りなさいね！"
+      ]
+    },
+    "sirius": {
+      "image": "chibi/sirius.png",
+      "visual": "a cute chibi anime girl with light blue and pink gradient twintails, halo floating above head, golden eyes, wearing a white oversized hooded jacket",
+      "speeches": {
+        "sunny": "みなさん、おはようございます。今日は晴れですね。良い一日を。",
+        "cloudy": "みなさん、おはようございます。今日は曇りのようです。落ち着いた一日を。",
+        "rainy": "みなさん、おはようございます。今日は雨です。濡れないよう傘をお持ちください。"
+      },
+      "night_speeches": [
+        "みなさん、今日もお疲れ様でした。静かな夜の時間を、心穏やかに過ごせますように。",
+        "一日の終わりですね、お疲れ様でした。明日に備えて、ゆっくりと深呼吸して休んでください。",
+        "今日もお疲れ様でした。夜空の星々が、あなたの疲れを癒やしてくれますように。"
+      ]
+    },
+    "stella": {
+      "image": "chibi/stella.png",
+      "visual": "a cute chibi anime girl with light lavender braided pigtails, black rose headdress, golden eyes, wearing a black and white gothic lolita dress",
+      "speeches": {
+        "sunny": "皆様、おはようございます…♪ 今日は心地よい晴れですわ。",
+        "cloudy": "皆様、おはようございます…♪ 今日は静かな曇り空ですわね。",
+        "rainy": "皆様、おはようございます…♪ 今日は雨模様ですわ、お傘をお忘れなく。"
+      },
+      "night_speeches": [
+        "皆様、今日もお疲れ様でしたわ…♪ 静寂に包まれた夜、心静かにお休みくださいませ。",
+        "一日を無事に終えられたことに感謝を…お疲れ様でしたわ。良い夢をご覧になってくださいね。",
+        "今日もお疲れ様でしたわ…♪ あたたかいハーブティーでも飲んで、お体を労わってくださいね。"
+      ]
+    },
+    "spica": {
+      "image": "chibi/spica.png",
+      "visual": "a cool chibi anime girl with pale lavender twintails, black cat-ear hoodie, deep blue-green eyes, wearing a black hoodie, white cropped top, pleated skirt",
+      "speeches": {
+        "sunny": "おはよー！今日は晴れだよ！今日もシャキッといきなさい！",
+        "cloudy": "おはよー！今日は曇りだよ。マイペースに乗り切りなさい！",
+        "rainy": "おはよー！今日は雨だよ、傘を忘れたら承知しないんだからね！"
+      },
+      "night_speeches": [
+        "今日も一日お疲れ様。ちゃんと自分の頑張りを褒めてから寝なさいよ！",
+        "ふん、今日もお疲れ様。夜更かしして体に毒を溜めないうちに早く寝なさいね。",
+        "一日よく頑張ったじゃない。今夜はしっかりリラックスして休むこと！おやすみ。"
+      ]
+    }
+  },
+  "situations": {
+    "sunny": {
+      "action": "[0.00s-2.00s] Looking straight at the camera with a cheerful expression, speaking the phrase: \"{speech}\". [2.00s-5.00s] Smiling softly and waving hand warmly as morning sunlight streams in.",
+      "mood": "bright cozy bedroom with warm sunbeams streaming through a window, blue sunny sky outside, cheerful morning atmosphere"
+    },
+    "cloudy": {
+      "action": "[0.00s-2.00s] Sitting at a wooden outdoor cafe table, looking at the viewer and speaking the phrase: \"{speech}\". [2.00s-5.00s] Blinking softly and offering a warm gentle wave.",
+      "mood": "modern outdoor cafe terrace under a soft cloudy overcast sky, green potted plants, gentle diffuse morning lighting"
+    },
+    "rainy": {
+      "action": "[0.00s-2.00s] Leaning lightly near a rainy window, turning to the camera and speaking the phrase: \"{speech}\". [2.00s-5.00s] Smiling gently and gesturing softly.",
+      "mood": "cozy room near a window with rain droplets visible on the glass, rainy day atmosphere outside, soft warm indoor lighting"
+    },
+    "night": {
+      "action": "[0.00s-2.00s] Sitting in a cozy dimly lit room near a window, turning to the viewer and speaking the phrase: \"{speech}\". [2.00s-5.00s] Smiling softly and giving a cute peaceful night wave.",
+      "mood": "cozy bedroom at night, dim warm lamp lighting, sparkling starry night sky outside the window, relaxed peaceful atmosphere"
+    }
+  },
+  "common_base": "Cinematic 2D anime motion starting from <Picture 1>. Maintain exact character design, face, and clothing from <Picture 1>. Rich detailed background environment, 2D anime animation style, smooth keyframe animation, high quality, zero distortion, no white border, no cut out line, natural lip sync animation speaking in Japanese."
+}

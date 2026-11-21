@@ -1,0 +1,107 @@
+{
+  "characters": {
+    "hina": {
+      "image": "chibi/hina.png",
+      "visual": "a cute chibi anime girl with dark brown hair in a high side-ponytail with pink highlights, purple eyes, wearing a dark navy blazer over a white shirt and plaid skirt",
+      "speeches": {
+        "cafe_tea": "このカフェのケーキ、すっごく美味しいよ！一緒にひと休みしよっ！",
+        "reading_chill": "たまにはこうして静かに本を読むのもいいよね。おすすめの本、ある？",
+        "gaming_fun": "よーし、今日はこのゲームクリアするまで寝ないぞー！応援してねっ！",
+        "evening_walk": "夕焼けがとっても綺麗だね！少しだけお散歩して帰ろうかな♪"
+      }
+    },
+    "kohaku": {
+      "image": "chibi/kohaku.png",
+      "visual": "a cute chibi anime girl with dark brown twintails with gold bell accessories, brown eyes, wearing a red cardigan over a white shirt, plaid skirt",
+      "speeches": {
+        "cafe_tea": "温かい紅茶を淹れましたよ。よかったら、ご一緒にいかがですか？",
+        "reading_chill": "ページをめくる音って落ち着きますよね。ゆったりした時間をお楽しみください。",
+        "gaming_fun": "ふふっ、実は私、こういうパズルゲームは結構得意なんですよ？",
+        "evening_walk": "涼しい風が気持ちいいですね。歩きながら少しお話ししましょうか。"
+      }
+    },
+    "luna": {
+      "image": "chibi/luna.png",
+      "visual": "a cute chibi anime girl with pale blue long hair, white beret hat, amber eyes, wearing a white and navy sailor suit",
+      "speeches": {
+        "cafe_tea": "ふわふわのパンケーキを発見しました♪ 甘いものは心の栄養ですよね！",
+        "reading_chill": "お星さまの図鑑を読んでいました♪ 宇宙って本当に不思議がいっぱいです。",
+        "gaming_fun": "えいっ、そこですっ！…あぁ〜、もう一回チャレンジしますっ！",
+        "evening_walk": "もうすぐ一番星が見えそうですね♪ 夜になる前のこの空、大好きです。"
+      }
+    },
+    "nano": {
+      "image": "chibi/nano.png",
+      "visual": "a cute chibi anime girl with dark brown high twintails with gold bell accessories, red eyes, winking, wearing a red and white miko-style outfit",
+      "speeches": {
+        "cafe_tea": "じゃーん！特大パフェだよー！ひとくち分けてあげよっか？えへへ！",
+        "reading_chill": "むむむ…難しい本読んでたら眠くなってきちゃったかも…！",
+        "gaming_fun": "やったーっ！ハイスコア更新だよー！ナノの腕前、見たかっ！",
+        "evening_walk": "お散歩日和だねーっ！あっちの公園まで競争しようよー！"
+      }
+    },
+    "selene": {
+      "image": "chibi/selene.png",
+      "visual": "a cute chibi anime girl with ash blonde wavy twintails, heart sunglasses on head, green eyes, wearing a pink crop top, denim vest, denim shorts",
+      "speeches": {
+        "cafe_tea": "新作のドリンク、映えすぎてヤバくない？一緒にカフェ巡りしようよ！",
+        "reading_chill": "最新ファッション誌チェック中〜♪ 次の休みは何着て出かけよっかな！",
+        "gaming_fun": "リズムゲームなら誰にも負けないんだから！ノリノリでいっちゃうよ〜！",
+        "evening_walk": "マジックアワーって最高にエモいよね！ちょっと写真撮っちゃおっと♪"
+      }
+    },
+    "sirius": {
+      "image": "chibi/sirius.png",
+      "visual": "a cute chibi anime girl with light blue and pink gradient twintails, halo floating above head, golden eyes, wearing a white oversized hooded jacket",
+      "speeches": {
+        "cafe_tea": "静かなカフェで過ごす時間は、思考を整理するのに最適ですね。",
+        "reading_chill": "知識を深める時間は尊いものです。あなたも何か読んでいますか？",
+        "gaming_fun": "なるほど、このステージの攻略ルートが見えてきました。次で決めます。",
+        "evening_walk": "昼の喧騒が落ち着くこの時間帯の散歩は、心が洗われるようです。"
+      }
+    },
+    "stella": {
+      "image": "chibi/stella.png",
+      "visual": "a cute chibi anime girl with light lavender braided pigtails, black rose headdress, golden eyes, wearing a black and white gothic lolita dress",
+      "speeches": {
+        "cafe_tea": "優雅なティータイムのお誘いですわ。香り高いダージリンはいかが？",
+        "reading_chill": "古い物語の世界に浸るひととき…誰にも邪魔されたくない贅沢ですわね。",
+        "gaming_fun": "あら、私を本気にさせてしまいましたわね？華麗に勝利してみせますわ。",
+        "evening_walk": "黄昏時の風は少し肌寒いですわね。もう少しだけ、お散歩にお付き合いくださる？"
+      }
+    },
+    "spica": {
+      "image": "chibi/spica.png",
+      "visual": "a cool chibi anime girl with pale lavender twintails, black cat-ear hoodie, deep blue-green eyes, wearing a black hoodie, white cropped top, pleated skirt",
+      "speeches": {
+        "cafe_tea": "ほら、息抜きも仕事のうちよ。コーヒーでも飲んでリフレッシュしなさい。",
+        "reading_chill": "技術書ばっかり読んでるわけじゃないわよ。たまには小説くらい読むんだから。",
+        "gaming_fun": "ちょっと、そこは右に避ける場面でしょ！貸してみなさい、お手本を見せてあげる！",
+        "evening_walk": "ずっと画面ばっかり見てないで、たまには外の空気を吸いなさいよ。ほら、行くわよ。"
+      }
+    }
+  },
+  "situations": {
+    "cafe_tea": {
+      "title": "カフェでひと休み",
+      "action": "[0.00s-2.00s] Sitting at a cozy cafe table with a cup of tea and sweets, looking at the viewer and speaking the phrase: \"{speech}\". [2.00s-5.00s] Smiling warmly and holding the cup gently.",
+      "mood": "stylish cozy cafe interior, warm pendant lighting, afternoon sunlight through window, relaxing acoustic BGM"
+    },
+    "reading_chill": {
+      "title": "まったり読書タイム",
+      "action": "[0.00s-2.00s] Holding an open book in a comfortable armchair, looking up at the camera and speaking the phrase: \"{speech}\". [2.00s-5.00s] Blinking softly with a peaceful smile.",
+      "mood": "quiet home library or cozy corner with bookshelves, soft warm lamp light, tranquil lo-fi BGM"
+    },
+    "gaming_fun": {
+      "title": "ゲームでリフレッシュ",
+      "action": "[0.00s-2.00s] Holding a game controller in a cozy room, looking excitedly at the camera and speaking the phrase: \"{speech}\". [2.00s-5.00s] Laughing cheerfully and gesturing lightly.",
+      "mood": "cozy room with soft neon accent lights and monitor glow, playful energetic atmosphere, upbeat chiptune BGM"
+    },
+    "evening_walk": {
+      "title": "夕暮れのお散歩",
+      "action": "[0.00s-2.00s] Standing along a scenic riverside path at sunset, turning to the viewer and speaking the phrase: \"{speech}\". [2.00s-5.00s] Waving gently as an evening breeze sways her hair.",
+      "mood": "beautiful sunset sky with orange and purple clouds, warm golden hour lighting, nostalgic gentle piano BGM"
+    }
+  },
+  "common_base": "Cinematic 2D anime motion starting from <Picture 1>. Maintain exact character design, face, and clothing from <Picture 1>. Rich detailed background environment, 2D anime animation style, smooth keyframe animation, high quality, zero distortion, no white border, no cut out line, natural lip sync animation speaking in Japanese."
+}

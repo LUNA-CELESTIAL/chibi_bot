@@ -1,0 +1,126 @@
+import os
+import json
+import random
+import logging
+import urllib.request
+import xml.etree.ElementTree as ET
+import ollama
+from video_generator import load_json_file
+
+logger = logging.getLogger("RssFriendTrigger")
+
+BASE_DIR = os.path.dirname(__file__)
+RSS_FEEDS_FILE = os.path.join(BASE_DIR, "rss_feeds.json")
+SEEN_RSS_FILE = os.path.join(BASE_DIR, "seen_rss.json")
+SPINOFF_PROMPTS_FILE = os.path.join(BASE_DIR, "spinoff_prompts.json")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen3.8-Q2:latest")
+
+
+def _load_seen_urls() -> list[str]:
+    if not os.path.exists(SEEN_RSS_FILE):
+        return []
+    try:
+        with open(SEEN_RSS_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return []
+
+
+def _save_seen_url(url: str):
+    seen = _load_seen_urls()
+    if url not in seen:
+        seen.append(url)
+        # 直近300件だけ保持して肥大化防止
+        seen = seen[-300:]
+        with open(SEEN_RSS_FILE, "w", encoding="utf-8") as f:
+            json.dump(seen, f, ensure_ascii=False, indent=2)
+
+
+def _fetch_latest_unseen_article(feed_url: str, seen_urls: list[str]) -> tuple[str, str] | None:
+    req = urllib.request.Request(feed_url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=15) as res:
+        xml_data = res.read()
+
+    root = ET.fromstring(xml_data)
+    items = root.findall(".//item")
+    if not items:
+        # Atom形式フォールバック
+        ns = {"atom": "http://www.w3.org/2005/Atom"}
+        for entry in root.findall(".//atom:entry", ns)[:10]:
+            title_el = entry.find("atom:title", ns)
+            link_el = entry.find("atom:link", ns)
+            title = title_el.text.strip() if title_el is not None and title_el.text else ""
+            link = link_el.attrib.get("href", "").strip() if link_el is not None else ""
+            if title and link and link not in seen_urls:
+                return title, link
+        return None
+
+    for item in items[:10]:
+        title_el = item.find("title")
+        link_el = item.find("link")
+        title = title_el.text.strip() if title_el is not None and title_el.text else ""
+        link = link_el.text.strip() if link_el is not None and link_el.text else ""
+        if title and link and link not in seen_urls:
+            return title, link
+    return None
+
+
+def _generate_friend_reaction(char_key: str, char_name: str, article_title: str) -> str:
+    prompts_data = load_json_file(SPINOFF_PROMPTS_FILE)
+    sample_speeches = prompts_data["characters"].get(char_key, {}).get("speeches", {})
+    samples_text = "\n".join([f"- {s}" for s in sample_speeches.values()])
+
+    prompt = (
+        f"あなたはアニメキャラクター「{char_name}」です。友達のルルに面白い記事を見つけて話しかけます。\n"
+        f"【{char_name}の口調サンプル】\n{samples_text}\n\n"
+        f"【見つけた記事のタイトル】\n「{article_title}」\n\n"
+        f"上記の口調サンプルになりきって、この記事を見た時の率直な感想や「ねえこれ見て！」という呼びかけを、"
+        f"5秒で話せる長さ（30〜45文字程度）の日本語のセリフ1つだけで出力してください。"
+        f"記事タイトルの丸読みは禁止。カギ括弧や説明は一切不要で、セリフのみ出力すること。"
+    )
+    response = ollama.chat(model=OLLAMA_MODEL, messages=[{"role": "user", "content": prompt}])
+    speech = response["message"]["content"].strip().strip("「」『』")
+    if len(speech) > 65:
+        speech = speech[:62] + "…"
+    return speech
+
+
+def pick_rss_friend_share(duty_characters: list[dict]) -> dict | None:
+    """
+    未読RSS記事を1件見つけ、担当キャラ・感想セリフ・記事情報を返す。
+    新着がなければ None を返す。
+    """
+    feeds_data = load_json_file(RSS_FEEDS_FILE)
+    feeds = feeds_data.get("feeds", [])
+    if not feeds:
+        return None
+
+    seen_urls = _load_seen_urls()
+    shuffled_feeds = random.sample(feeds, len(feeds))
+
+    for feed in shuffled_feeds:
+        try:
+            article = _fetch_latest_unseen_article(feed["url"], seen_urls)
+            if not article:
+                continue
+
+            title, link = article
+            char_key = random.choice(feed["preferred_chars"])
+            char_info = next((c for c in duty_characters if c["key"] == char_key), duty_characters[0])
+
+            speech = _generate_friend_reaction(char_key, char_info["name"], title)
+            _save_seen_url(link)
+
+            return {
+                "char_info": char_info,
+                "situation_key": feed.get("situation", "cafe_tea"),
+                "speech": speech,
+                "article_title": title,
+                "article_url": link,
+                "prompts_file": SPINOFF_PROMPTS_FILE,
+            }
+        except Exception as e:
+            logger.warning(f"RSS取得または生成スキップ ({feed.get('url')}): {e}")
+            continue
+
+    return None

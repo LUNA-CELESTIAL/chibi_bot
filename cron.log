@@ -1,0 +1,411 @@
+[2026-11-07 23:51:01] [INFO    ] discord.client: logging in using static token
+2026-11-07 23:51:01,179 [INFO] discord.client: logging in using static token
+2026-11-07 23:51:02,533 [INFO] MorningDutyBot: スラッシュコマンドの同期および毎朝の自動投稿タスクのスケジュールが完了しました。
+[2026-11-07 23:51:03] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: e477739cbd8d468cae7660ae80392f35).
+2026-11-07 23:51:03,154 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: e477739cbd8d468cae7660ae80392f35).
+[2026-11-07 23:53:01] [INFO    ] discord.client: logging in using static token
+2026-11-07 23:53:01,198 [INFO] discord.client: logging in using static token
+2026-11-07 23:53:02,242 [INFO] MorningDutyBot: スラッシュコマンドの同期および毎朝の自動投稿タスクのスケジュールが完了しました。
+[2026-11-07 23:53:02] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: a40a970bafecb1e5813ce8675e34cbca).
+2026-11-07 23:53:02,832 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: a40a970bafecb1e5813ce8675e34cbca).
+2026-11-08 09:00:01,692 [INFO] discord.client: logging in using static token
+2026-11-08 09:00:03,954 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 147fe4b75fa99cf888fe8a771801ca09).
+2026-11-08 09:00:05,957 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-08 09:00:05,957 [INFO] MorningDutyRun: 当番投稿処理開始: [ひな] (シチュエーション: going_out)
+2026-11-08 09:00:05,957 [ERROR] MorningDutyRun: 本番投稿処理中にエラーが発生しました: シチュエーション 'going_out' が prompts.json の 'situations' に存在しません。
+2026-11-08 09:00:05,958 [ERROR] MorningDutyRun: Traceback (most recent call last):
+  File "/home/lulu/luna/luna_docker/chibi_bot/bot.py", line 72, in on_ready
+    video_path = await generate_vlog_video(char_info["key"], sit_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/chibi_bot/video_generator.py", line 47, in generate_vlog_video
+    image_rel_path, prompt_text = build_dynamic_prompt(character_name, situation_key)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/chibi_bot/video_generator.py", line 32, in build_dynamic_prompt
+    raise ValueError(f"シチュエーション '{situation_key}' が prompts.json の 'situations' に存在しません。")
+ValueError: シチュエーション 'going_out' が prompts.json の 'situations' に存在しません。
+
+2026-11-08 09:05:01,910 [INFO] discord.client: logging in using static token
+2026-11-08 09:05:03,183 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: aaaa2dfa809849535d027c164645b33e).
+2026-11-08 09:05:05,221 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-08 09:05:05,221 [INFO] MorningDutyRun: 当番投稿処理開始: [ひな] (シチュエーション: classroom_window)
+2026-11-08 09:05:05,222 [INFO] video_generator: [hina] ComfyUIへジョブ送信中... (画像: chibi/hina.png)
+2026-11-08 09:05:05,239 [INFO] video_generator: ジョブ送信完了 (prompt_id: 15b24cc0-562e-4d12-998b-623bd8b5e2b8)
+2026-11-08 09:05:05,239 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 15b24cc0-562e-4d12-998b-623bd8b5e2b8)...
+2026-11-08 09:06:34,331 [INFO] MorningDutyRun: [ひな] の本番動画送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00134_.mp4
+2026-11-08 14:52:01,475 [INFO] discord.client: logging in using static token
+2026-11-08 14:52:02,833 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 0509df9b329f301abf5c7e78f1a78480).
+2026-11-08 14:52:04,836 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-08 14:52:04,958 [INFO] MorningDutyRun: 当番投稿処理開始: [ひな] (天気: 晴れ　夜　くもり)
+2026-11-08 14:52:04,959 [INFO] video_generator: [hina] ComfyUIへジョブ送信中... (画像: chibi/hina.png)
+2026-11-08 14:52:04,963 [INFO] video_generator: ジョブ送信完了 (prompt_id: af598dd9-9d1a-4200-a398-09a3f22853f8)
+2026-11-08 14:52:04,963 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: af598dd9-9d1a-4200-a398-09a3f22853f8)...
+2026-11-08 14:53:24,727 [INFO] MorningDutyRun: [ひな] の本番動画＆天気メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00135_.mp4
+2026-11-08 14:57:01,921 [INFO] discord.client: logging in using static token
+2026-11-08 14:57:04,053 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 122aeade562905d018a06ce5d71317c2).
+2026-11-08 14:57:06,057 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-08 14:57:06,304 [INFO] MorningDutyRun: 当番投稿処理開始: [ひな] (天気: 晴れ　夜　くもり, シチュエーション: classroom_window)
+2026-11-08 14:57:06,304 [INFO] video_generator: [hina] ComfyUIへジョブ送信中... (画像: chibi/hina.png)
+2026-11-08 14:57:06,308 [INFO] video_generator: ジョブ送信完了 (prompt_id: 21cb2452-3edb-453f-affe-2e0735aa002b)
+2026-11-08 14:57:06,308 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 21cb2452-3edb-453f-affe-2e0735aa002b)...
+2026-11-08 14:57:11,114 [INFO] MorningDutyRun: [ひな] の本番動画＆天気メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00135_.mp4
+2026-11-08 15:03:01,314 [INFO] discord.client: logging in using static token
+2026-11-08 15:03:02,845 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 3253ca4e969c29352855349c92d1bcbb).
+2026-11-08 15:03:04,848 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-08 15:03:04,944 [INFO] MorningDutyRun: 当番投稿処理開始: [ひな] (天気: 晴れ　夜　くもり, シチュエーション: classroom_window)
+2026-11-08 15:03:04,945 [INFO] video_generator: [hina] ComfyUIへジョブ送信中... (画像: chibi/hina.png)
+2026-11-08 15:03:04,947 [INFO] video_generator: ジョブ送信完了 (prompt_id: e5d40947-4b79-4e12-822a-50c4e10cfd59)
+2026-11-08 15:03:04,947 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: e5d40947-4b79-4e12-822a-50c4e10cfd59)...
+2026-11-08 15:04:24,917 [INFO] MorningDutyRun: [ひな] の本番動画＆天気メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00136_.mp4
+2026-11-08 15:17:01,162 [INFO] discord.client: logging in using static token
+2026-11-08 15:17:02,308 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 3436ffd5b832434db4af94d7c5057831).
+2026-11-08 15:17:04,370 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-08 15:17:04,481 [ERROR] MorningDutyRun: 本番投稿処理中にエラーが発生しました: 'weather'
+2026-11-08 15:17:04,481 [ERROR] MorningDutyRun: Traceback (most recent call last):
+  File "/home/lulu/luna/luna_docker/chibi_bot/bot.py", line 103, in on_ready
+    speech_text = build_morning_speech(char_info["key"], weather_info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/chibi_bot/bot.py", line 63, in build_morning_speech
+    weather = weather_info["weather"]
+              ~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'weather'
+
+2026-11-08 15:19:01,189 [INFO] discord.client: logging in using static token
+2026-11-08 15:19:02,965 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 356eefd83e11a73651cea914f5fc3f8d).
+2026-11-08 15:19:04,967 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-08 15:19:05,050 [INFO] MorningDutyRun: 当番投稿処理開始: [ひな] (天気: 晴れ, シチュエーションキー: sunny)
+2026-11-08 15:19:05,051 [INFO] video_generator: [hina] ComfyUIへジョブ送信中... (画像: chibi/hina.png)
+2026-11-08 15:19:05,053 [INFO] video_generator: ジョブ送信完了 (prompt_id: 5a47711b-279a-4cb1-a4f8-46506d297688)
+2026-11-08 15:19:05,053 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 5a47711b-279a-4cb1-a4f8-46506d297688)...
+2026-11-08 15:20:21,730 [INFO] MorningDutyRun: [ひな] の本番動画＆天気メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00137_.mp4
+2026-11-08 15:28:01,950 [INFO] discord.client: logging in using static token
+2026-11-08 15:28:03,143 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 316d252ecef7b22c0efe3d206161e0b3).
+2026-11-08 15:28:05,147 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-08 15:28:05,713 [INFO] MorningDutyRun: 当番投稿処理開始: [ひな] (天気: 晴れ, シチュエーションキー: sunny)
+2026-11-08 15:28:05,713 [INFO] video_generator: [hina] ComfyUIへジョブ送信中... (天気: sunny, 発話: みんな、おはよーっ！今日は晴れだよ！今日も一日がんばろうね！)
+2026-11-08 15:28:05,717 [INFO] video_generator: ジョブ送信完了 (prompt_id: 7e3735f0-c9b0-4c65-94f2-cec51953d534)
+2026-11-08 15:28:05,717 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 7e3735f0-c9b0-4c65-94f2-cec51953d534)...
+2026-11-08 15:29:20,848 [ERROR] MorningDutyRun: 本番投稿処理中にエラーが発生しました: stat: path should be string, bytes, os.PathLike or integer, not tuple
+2026-11-08 15:29:20,849 [ERROR] MorningDutyRun: Traceback (most recent call last):
+  File "/home/lulu/luna/luna_docker/chibi_bot/bot.py", line 98, in on_ready
+    if not os.path.exists(video_path):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen genericpath>", line 19, in exists
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not tuple
+
+2026-11-08 15:32:01,384 [INFO] discord.client: logging in using static token
+2026-11-08 15:32:02,677 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 5c6c90f267f3b052691d874353de7389).
+2026-11-08 15:32:04,680 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-08 15:32:04,783 [INFO] MorningDutyRun: 当番投稿処理開始: [ひな] (天気: 晴れ, キー: sunny)
+2026-11-08 15:32:04,784 [INFO] video_generator: [hina] ComfyUIへジョブ送信中... (天気: sunny, 発話: みんな、おはよーっ！今日は晴れだよ！今日も一日がんばろうね！)
+2026-11-08 15:32:04,788 [INFO] video_generator: ジョブ送信完了 (prompt_id: 4a99ba5e-f1e9-4186-9f92-d6968b841fa0)
+2026-11-08 15:32:04,788 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 4a99ba5e-f1e9-4186-9f92-d6968b841fa0)...
+2026-11-08 15:32:09,536 [INFO] MorningDutyRun: [ひな] の動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00138_.mp4
+2026-11-08 15:53:01,829 [INFO] discord.client: logging in using static token
+2026-11-08 15:53:03,740 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: c28748de0851145ce0247d8af7592c00).
+2026-11-08 15:53:05,744 [INFO] NightDutyRun: 夜投稿用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-08 15:53:05,745 [INFO] NightDutyRun: 夜の当番投稿処理開始: [ひな] (シチュエーション: night)
+2026-11-08 15:53:05,745 [ERROR] NightDutyRun: 夜の投稿処理中にエラーが発生しました: name 'datetime' is not defined
+2026-11-08 15:53:05,747 [ERROR] NightDutyRun: Traceback (most recent call last):
+  File "/home/lulu/luna/luna_docker/chibi_bot/bot_night.py", line 91, in on_ready
+    video_path, _ = await generate_vlog_video(char_info["key"], "night")
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/chibi_bot/video_generator.py", line 74, in generate_vlog_video
+    image_rel_path, speech_text, prompt_text = build_dynamic_prompt(character_name, weather_key)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/chibi_bot/video_generator.py", line 43, in build_dynamic_prompt
+    today_ordinal = datetime.date.today().toordinal()
+                    ^^^^^^^^
+NameError: name 'datetime' is not defined. Did you forget to import 'datetime'
+
+2026-11-08 15:57:01,287 [INFO] discord.client: logging in using static token
+2026-11-08 15:57:02,513 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: a68b56a47f09a32a37963c971eaf931c).
+2026-11-08 15:57:04,516 [INFO] NightDutyRun: 夜投稿用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-08 15:57:04,516 [INFO] NightDutyRun: 夜の当番投稿処理開始: [ひな] (シチュエーション: night)
+2026-11-08 15:57:04,517 [INFO] video_generator: [hina] ComfyUIへジョブ送信中... (天気: night, 発話: お仕事に学校、今日もお疲れ様！明日も一緒に頑張ろうね、おやすみっ！)
+2026-11-08 15:57:04,534 [INFO] video_generator: ジョブ送信完了 (prompt_id: 104e9244-d7c8-455b-b849-365f3eae8ab9)
+2026-11-08 15:57:04,534 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 104e9244-d7c8-455b-b849-365f3eae8ab9)...
+2026-11-08 15:58:21,978 [INFO] NightDutyRun: [ひな] の夜動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00139_.mp4
+2026-11-08 20:00:01,898 [INFO] discord.client: logging in using static token
+2026-11-08 20:00:03,963 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 41d69618862358530cfffcacdc05c801).
+2026-11-08 20:00:05,967 [INFO] NightDutyRun: 夜投稿用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-08 20:00:05,967 [INFO] NightDutyRun: 夜の当番投稿処理開始: [ひな] (シチュエーション: night)
+2026-11-08 20:00:05,968 [INFO] video_generator: [hina] ComfyUIへジョブ送信中... (天気: night, 発話: お仕事に学校、今日もお疲れ様！明日も一緒に頑張ろうね、おやすみっ！)
+2026-11-08 20:00:05,997 [INFO] video_generator: ジョブ送信完了 (prompt_id: c6f79ca1-6f5a-4caf-8d28-95f50a2e8274)
+2026-11-08 20:00:05,997 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: c6f79ca1-6f5a-4caf-8d28-95f50a2e8274)...
+2026-11-08 20:01:29,227 [INFO] NightDutyRun: [ひな] の夜動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00149_.mp4
+2026-11-09 09:00:01,530 [INFO] discord.client: logging in using static token
+2026-11-09 09:00:04,891 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 25a993a69940a8cca6cbe031661c600c).
+2026-11-09 09:00:06,894 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-09 09:00:07,022 [INFO] MorningDutyRun: 当番投稿処理開始: [こはく] (天気: 雨, キー: rainy)
+2026-11-09 09:00:07,032 [INFO] video_generator: [kohaku] ComfyUIへジョブ送信中... (天気: rainy, 発話: おはようございます！今日は雨です、傘を忘れずにお持ちくださいね。)
+2026-11-09 09:00:07,037 [INFO] video_generator: ジョブ送信完了 (prompt_id: a38ccf89-e546-4a3e-8a3a-a44bb57b8016)
+2026-11-09 09:00:07,037 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: a38ccf89-e546-4a3e-8a3a-a44bb57b8016)...
+2026-11-09 09:01:34,146 [INFO] MorningDutyRun: [こはく] の動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00181_.mp4
+2026-11-09 20:00:01,615 [INFO] discord.client: logging in using static token
+2026-11-09 20:00:04,733 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: a31eede035735422d649df54175c6b17).
+2026-11-09 20:00:06,737 [INFO] NightDutyRun: 夜投稿用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-09 20:00:06,747 [INFO] NightDutyRun: 夜の当番投稿処理開始: [こはく] (シチュエーション: night)
+2026-11-09 20:00:06,748 [INFO] video_generator: [kohaku] ComfyUIへジョブ送信中... (天気: night, 発話: 一日頑張ったあなたに拍手です！今夜は安心してぐっすり眠ってくださいね。)
+2026-11-09 20:00:06,766 [INFO] video_generator: ジョブ送信完了 (prompt_id: ed1077b6-5173-4114-b1f1-fa76f0153231)
+2026-11-09 20:00:06,767 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: ed1077b6-5173-4114-b1f1-fa76f0153231)...
+2026-11-09 20:01:33,983 [INFO] NightDutyRun: [こはく] の夜動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00182_.mp4
+2026-11-10 09:25:02,224 [INFO] discord.client: logging in using static token
+Traceback (most recent call last):
+  File "/home/lulu/luna/luna_docker/.my_venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1571, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/.my_venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1181, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/.my_venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1212, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/.my_venv/lib/python3.12/site-packages/aiohttp/resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 901, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lulu/luna/luna_docker/chibi_bot/bot.py", line 124, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/chibi_bot/bot.py", line 121, in main
+    await client.start(TOKEN)
+  File "/home/lulu/luna/luna_docker/.my_venv/lib/python3.12/site-packages/discord/client.py", line 850, in start
+    await self.login(token)
+  File "/home/lulu/luna/luna_docker/.my_venv/lib/python3.12/site-packages/discord/client.py", line 679, in login
+    data = await self.http.static_login(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/.my_venv/lib/python3.12/site-packages/discord/http.py", line 844, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/.my_venv/lib/python3.12/site-packages/discord/http.py", line 659, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "/home/lulu/luna/luna_docker/.my_venv/lib/python3.12/site-packages/aiohttp/client.py", line 1683, in __aenter__
+    self._resp: _RetType_co = await self._coro
+                              ^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/.my_venv/lib/python3.12/site-packages/aiohttp/client.py", line 856, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/.my_venv/lib/python3.12/site-packages/aiohttp/client.py", line 810, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/.my_venv/lib/python3.12/site-packages/aiohttp/connector.py", line 657, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/.my_venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1242, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/.my_venv/lib/python3.12/site-packages/aiohttp/connector.py", line 1577, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host discord.com:443 ssl:default [Temporary failure in name resolution]
+2026-11-10 09:25:12,275 [ERROR] asyncio: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0xf202a986d3a0>
+2026-11-10 09:30:01,475 [INFO] discord.client: logging in using static token
+2026-11-10 09:30:03,906 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 75459cca1001f4e0474c037c03ebc740).
+2026-11-10 09:30:05,911 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-10 09:30:05,986 [INFO] MorningDutyRun: 当番投稿処理開始: [ルナ] (天気: 雨, キー: rainy)
+2026-11-10 09:30:05,986 [INFO] video_generator: [luna] ComfyUIへジョブ送信中... (天気: rainy, 発話: みなさん、おはようございます♪ 今日は雨が降っています、傘を持って出かけてくださいね！)
+2026-11-10 09:30:05,991 [INFO] video_generator: ジョブ送信完了 (prompt_id: 2b93c437-87fb-4c1d-bd25-fd2824b46aeb)
+2026-11-10 09:30:05,991 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 2b93c437-87fb-4c1d-bd25-fd2824b46aeb)...
+2026-11-10 09:31:39,784 [INFO] MorningDutyRun: [ルナ] の動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00183_.mp4
+2026-11-10 20:00:01,386 [INFO] NightDutyRun: 夜用 Discord Bot 起動試行 (1/3)...
+2026-11-10 20:00:01,387 [INFO] discord.client: logging in using static token
+2026-11-10 20:00:08,795 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 579b7d7844e16be8688478e8504c4638).
+2026-11-10 20:00:10,798 [INFO] NightDutyRun: 夜投稿用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-10 20:00:10,798 [INFO] NightDutyRun: 夜の当番投稿処理開始: [ルナ] (シチュエーション: night)
+2026-11-10 20:00:10,808 [INFO] video_generator: [luna] ComfyUIへジョブ送信中... (天気: night, 発話: 一日本当にお疲れ様でした！ルナと一緒に、素敵な夜の時間を過ごしましょう♪)
+2026-11-10 20:00:10,837 [INFO] video_generator: ジョブ送信完了 (prompt_id: 73193968-5230-4566-ac2e-ef752f3474d7)
+2026-11-10 20:00:10,837 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 73193968-5230-4566-ac2e-ef752f3474d7)...
+2026-11-10 20:01:27,756 [INFO] NightDutyRun: [ルナ] の夜動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00189_.mp4
+2026-11-11 09:30:01,441 [INFO] MorningDutyRun: Discord Bot 起動試行 (1/3)...
+2026-11-11 09:30:01,442 [INFO] discord.client: logging in using static token
+2026-11-11 09:30:08,248 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: e72b11b415d7f57b5f5dcc95003f3d68).
+2026-11-11 09:30:10,250 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-11 09:30:10,349 [INFO] MorningDutyRun: 当番投稿処理開始: [ナノ] (天気: 晴れ, キー: sunny)
+2026-11-11 09:30:10,359 [INFO] video_generator: [nano] ComfyUIへジョブ送信中... (天気: sunny, 発話: みんなー！おはよーっ！今日はすっごくいい晴れだよー！ファイトー！)
+2026-11-11 09:30:10,362 [INFO] video_generator: ジョブ送信完了 (prompt_id: 62670445-6049-4a25-b7ea-4f3fa57f61d2)
+2026-11-11 09:30:10,362 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 62670445-6049-4a25-b7ea-4f3fa57f61d2)...
+2026-11-11 09:31:39,995 [INFO] MorningDutyRun: [ナノ] の動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00190_.mp4
+2026-11-11 20:00:01,873 [INFO] NightDutyRun: 夜用 Discord Bot 起動試行 (1/3)...
+2026-11-11 20:00:01,874 [INFO] discord.client: logging in using static token
+2026-11-11 20:00:03,533 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 1d10d1cef434b29e850324011cb19424).
+2026-11-11 20:00:05,535 [INFO] NightDutyRun: 夜投稿用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-11 20:00:05,536 [INFO] NightDutyRun: 夜の当番投稿処理開始: [ナノ] (シチュエーション: night)
+2026-11-11 20:00:05,546 [INFO] video_generator: [nano] ComfyUIへジョブ送信中... (天気: night, 発話: 一日お疲れ様ーっ！今日もすっごく頑張ってえらい！明日も元気にいこーね！)
+2026-11-11 20:00:05,565 [INFO] video_generator: ジョブ送信完了 (prompt_id: 0f3fe2e4-c8f1-42b2-ae96-82af137b0d84)
+2026-11-11 20:00:05,565 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 0f3fe2e4-c8f1-42b2-ae96-82af137b0d84)...
+2026-11-11 20:01:28,521 [INFO] NightDutyRun: [ナノ] の夜動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00191_.mp4
+2026-11-12 09:30:02,084 [INFO] MorningDutyRun: Discord Bot 起動試行 (1/3)...
+2026-11-12 09:30:02,085 [INFO] discord.client: logging in using static token
+2026-11-12 09:30:03,415 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: a16962264fa6f7f87b252d96e72a4e30).
+2026-11-12 09:30:05,448 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-12 09:30:05,696 [INFO] MorningDutyRun: 当番投稿処理開始: [セレーネ] (天気: 晴れ, キー: sunny)
+2026-11-12 09:30:05,697 [INFO] video_generator: [selene] ComfyUIへジョブ送信中... (天気: sunny, 発話: モーニング〜！今日は最高の晴れよ！テンションあげてこ！)
+2026-11-12 09:30:05,714 [INFO] video_generator: ジョブ送信完了 (prompt_id: 49b82357-b010-478f-925a-73a6611b63dd)
+2026-11-12 09:30:05,714 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 49b82357-b010-478f-925a-73a6611b63dd)...
+2026-11-12 09:31:38,171 [INFO] MorningDutyRun: [セレーネ] の動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00192_.mp4
+2026-11-12 20:00:01,581 [INFO] NightDutyRun: 夜用 Discord Bot 起動試行 (1/3)...
+2026-11-12 20:00:01,581 [INFO] discord.client: logging in using static token
+2026-11-12 20:00:03,579 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 85a5ed1cdf2a51fdb3473e3d36012e24).
+2026-11-12 20:00:05,582 [INFO] NightDutyRun: 夜投稿用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-12 20:00:05,584 [INFO] NightDutyRun: 夜の当番投稿処理開始: [セレーネ] (シチュエーション: night)
+2026-11-12 20:00:05,585 [INFO] video_generator: [selene] ComfyUIへジョブ送信中... (天気: night, 発話: 一日おつかれ〜！頑張った自分にちょっとしたご褒美、あげちゃってもいいんじゃない？)
+2026-11-12 20:00:05,611 [INFO] video_generator: ジョブ送信完了 (prompt_id: 7e08e231-8e7e-4ee1-98c2-7a02417a2319)
+2026-11-12 20:00:05,621 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 7e08e231-8e7e-4ee1-98c2-7a02417a2319)...
+2026-11-12 20:02:41,754 [INFO] NightDutyRun: [セレーネ] の夜動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00193_.mp4
+2026-11-13 09:01:01,523 [INFO] MorningDutyRun: Discord Bot 起動試行 (1/3)...
+2026-11-13 09:01:01,524 [INFO] discord.client: logging in using static token
+2026-11-13 09:01:03,001 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 39577dcb5b9ea10857617ee7486b9aa4).
+2026-11-13 09:01:05,004 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-13 09:01:05,414 [INFO] MorningDutyRun: 当番投稿処理開始: [シリウス] (天気: 晴れ, キー: sunny)
+2026-11-13 09:01:05,415 [INFO] video_generator: [sirius] ComfyUIへジョブ送信中... (天気: sunny, 発話: みなさん、おはようございます。今日は晴れですね。良い一日を。)
+2026-11-13 09:01:05,418 [INFO] video_generator: ジョブ送信完了 (prompt_id: 026e580f-211a-4e4a-8862-2343498ff12e)
+2026-11-13 09:01:05,418 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 026e580f-211a-4e4a-8862-2343498ff12e)...
+2026-11-13 09:02:38,834 [INFO] MorningDutyRun: [シリウス] の動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00194_.mp4
+2026-11-13 20:00:01,832 [INFO] NightDutyRun: 夜用 Discord Bot 起動試行 (1/3)...
+2026-11-13 20:00:01,833 [INFO] discord.client: logging in using static token
+2026-11-13 20:00:03,530 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 9413ce34dc90ebffc984941073f0fcd0).
+2026-11-13 20:00:05,643 [INFO] NightDutyRun: 夜投稿用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-13 20:00:05,654 [INFO] NightDutyRun: 夜の当番投稿処理開始: [シリウス] (シチュエーション: night)
+2026-11-13 20:00:05,655 [INFO] video_generator: [sirius] ComfyUIへジョブ送信中... (天気: night, 発話: 一日の終わりですね、お疲れ様でした。明日に備えて、ゆっくりと深呼吸して休んでください。)
+2026-11-13 20:00:05,673 [INFO] video_generator: ジョブ送信完了 (prompt_id: 5cae7195-a744-4b14-af10-f35a36f5f911)
+2026-11-13 20:00:05,674 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 5cae7195-a744-4b14-af10-f35a36f5f911)...
+2026-11-13 20:01:29,285 [INFO] NightDutyRun: [シリウス] の夜動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00195_.mp4
+2026-11-14 09:01:01,986 [INFO] MorningDutyRun: Discord Bot 起動試行 (1/3)...
+2026-11-14 09:01:01,987 [INFO] discord.client: logging in using static token
+2026-11-14 09:01:03,657 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: f07661ef7d2b6c1511602ebdde447c0d).
+2026-11-14 09:01:05,659 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-14 09:01:05,798 [INFO] MorningDutyRun: 当番投稿処理開始: [ステラ] (天気: 晴れ, キー: sunny)
+2026-11-14 09:01:05,809 [INFO] video_generator: [stella] ComfyUIへジョブ送信中... (天気: sunny, 発話: 皆様、おはようございます…♪ 今日は心地よい晴れですわ。)
+2026-11-14 09:01:05,813 [ERROR] video_generator: ComfyUI API通信エラー: HTTP Error 400: Bad Request
+2026-11-14 09:01:05,813 [ERROR] MorningDutyRun: 本番投稿処理中にエラーが発生しました: ComfyUI (http://127.0.0.1:8188) への接続に失敗しました: HTTP Error 400: Bad Request
+2026-11-14 09:01:05,815 [ERROR] MorningDutyRun: Traceback (most recent call last):
+  File "/home/lulu/luna/luna_docker/chibi_bot/video_generator.py", line 97, in generate_vlog_video
+    with urllib.request.urlopen(req) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lulu/luna/luna_docker/chibi_bot/bot.py", line 95, in on_ready
+    video_path, speech_text = await generate_vlog_video(char_info["key"], weather_key)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/chibi_bot/video_generator.py", line 103, in generate_vlog_video
+    raise ConnectionError(f"ComfyUI ({COMFYUI_URL}) への接続に失敗しました: {e}")
+ConnectionError: ComfyUI (http://127.0.0.1:8188) への接続に失敗しました: HTTP Error 400: Bad Request
+
+2026-11-14 10:04:01,863 [INFO] MorningDutyRun: Discord Bot 起動試行 (1/3)...
+2026-11-14 10:04:01,864 [INFO] discord.client: logging in using static token
+2026-11-14 10:04:03,380 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 9399da2ac4bf74187528c17c06397ddf).
+2026-11-14 10:04:05,385 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-14 10:04:05,485 [INFO] MorningDutyRun: 当番投稿処理開始: [ステラ] (天気: 晴れ, キー: sunny)
+2026-11-14 10:04:05,485 [INFO] video_generator: [stella] ComfyUIへジョブ送信中... (天気: sunny, 発話: 皆様、おはようございます…♪ 今日は心地よい晴れですわ。)
+2026-11-14 10:04:05,489 [ERROR] video_generator: ComfyUI API通信エラー: HTTP Error 400: Bad Request
+2026-11-14 10:04:05,489 [ERROR] MorningDutyRun: 本番投稿処理中にエラーが発生しました: ComfyUI (http://127.0.0.1:8188) への接続に失敗しました: HTTP Error 400: Bad Request
+2026-11-14 10:04:05,491 [ERROR] MorningDutyRun: Traceback (most recent call last):
+  File "/home/lulu/luna/luna_docker/chibi_bot/video_generator.py", line 97, in generate_vlog_video
+    with urllib.request.urlopen(req) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lulu/luna/luna_docker/chibi_bot/bot.py", line 95, in on_ready
+    video_path, speech_text = await generate_vlog_video(char_info["key"], weather_key)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lulu/luna/luna_docker/chibi_bot/video_generator.py", line 103, in generate_vlog_video
+    raise ConnectionError(f"ComfyUI ({COMFYUI_URL}) への接続に失敗しました: {e}")
+ConnectionError: ComfyUI (http://127.0.0.1:8188) への接続に失敗しました: HTTP Error 400: Bad Request
+
+2026-11-14 20:00:01,332 [INFO] NightDutyRun: 夜用 Discord Bot 起動試行 (1/3)...
+2026-11-14 20:00:01,333 [INFO] discord.client: logging in using static token
+2026-11-14 20:00:02,584 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 1e366979d9c811cd8462016ab78fd7f4).
+2026-11-14 20:00:04,589 [INFO] NightDutyRun: 夜投稿用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-14 20:00:04,589 [INFO] NightDutyRun: 夜の当番投稿処理開始: [ステラ] (シチュエーション: night)
+2026-11-14 20:00:04,590 [INFO] video_generator: [stella] ComfyUIへジョブ送信中... (天気: night, 発話: 一日を無事に終えられたことに感謝を…お疲れ様でしたわ。良い夢をご覧になってくださいね。)
+2026-11-14 20:00:04,619 [INFO] video_generator: ジョブ送信完了 (prompt_id: a5e0020b-7e5a-476a-a5df-8b5f3dc04da3)
+2026-11-14 20:00:04,619 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: a5e0020b-7e5a-476a-a5df-8b5f3dc04da3)...
+2026-11-14 20:01:18,716 [INFO] NightDutyRun: [ステラ] の夜動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00197_.mp4
+2026-11-15 09:47:01,331 [INFO] MorningDutyRun: Discord Bot 起動試行 (1/3)...
+2026-11-15 09:47:01,331 [INFO] discord.client: logging in using static token
+2026-11-15 09:47:02,707 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 7d79bb463a39159bff33e0d6f08f3272).
+2026-11-15 09:47:04,712 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-15 09:47:05,409 [INFO] MorningDutyRun: 当番投稿処理開始: [スピカ] (天気: 雨, キー: rainy)
+2026-11-15 09:47:05,410 [INFO] video_generator: [spica] ComfyUIへジョブ送信中... (天気: rainy, 発話: おはよー！今日は雨だよ、傘を忘れたら承知しないんだからね！)
+2026-11-15 09:47:05,415 [INFO] video_generator: ジョブ送信完了 (prompt_id: 7135c813-6ea8-4288-a14d-48d966c007b2)
+2026-11-15 09:47:05,415 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 7135c813-6ea8-4288-a14d-48d966c007b2)...
+2026-11-15 09:48:34,265 [INFO] MorningDutyRun: [スピカ] の動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00198_.mp4
+2026-11-15 20:00:01,550 [INFO] NightDutyRun: 夜用 Discord Bot 起動試行 (1/3)...
+2026-11-15 20:00:01,551 [INFO] discord.client: logging in using static token
+2026-11-15 20:00:03,264 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: f43e609c06d8e18f6a55b8e92169c00f).
+2026-11-15 20:00:05,268 [INFO] NightDutyRun: 夜投稿用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-15 20:00:05,268 [INFO] NightDutyRun: 夜の当番投稿処理開始: [スピカ] (シチュエーション: night)
+2026-11-15 20:00:05,268 [INFO] video_generator: [spica] ComfyUIへジョブ送信中... (天気: night, 発話: ふん、今日もお疲れ様。夜更かしして体に毒を溜めないうちに早く寝なさいね。)
+2026-11-15 20:00:05,286 [INFO] video_generator: ジョブ送信完了 (prompt_id: 6b0ff54b-e883-49cc-8f31-89d6ae438424)
+2026-11-15 20:00:05,286 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 6b0ff54b-e883-49cc-8f31-89d6ae438424)...
+2026-11-15 20:01:13,455 [INFO] NightDutyRun: [スピカ] の夜動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00200_.mp4
+2026-11-16 09:47:02,157 [INFO] MorningDutyRun: Discord Bot 起動試行 (1/3)...
+2026-11-16 09:47:02,158 [INFO] discord.client: logging in using static token
+2026-11-16 09:47:03,594 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 6d8b73df3e89042a484eb83291ccd634).
+2026-11-16 09:47:05,597 [INFO] MorningDutyRun: 送信用Botログイン成功: うさぎのお星さまファクトリー
+2026-11-16 09:47:05,687 [INFO] MorningDutyRun: 当番投稿処理開始: [ひな] (天気: 晴れ, キー: sunny)
+2026-11-16 09:47:05,697 [INFO] video_generator: [hina] ComfyUIへジョブ送信中... (天気: sunny, 発話: みんな、おはよーっ！今日は晴れだよ！今日も一日がんばろうね！)
+2026-11-16 09:47:05,702 [INFO] video_generator: ジョブ送信完了 (prompt_id: 81a51712-9e62-4a6c-818f-69cc820e0bd5)
+2026-11-16 09:47:05,702 [INFO] video_generator: 動画生成完了を待機中 (prompt_id: 81a51712-9e62-4a6c-818f-69cc820e0bd5)...
+2026-11-16 09:48:31,646 [INFO] MorningDutyRun: [ひな] の動画＆メッセージ送信完了: /home/lulu/luna/luna_docker/draw_agents/outputs/video/MiniMax_H3_00207_.mp4

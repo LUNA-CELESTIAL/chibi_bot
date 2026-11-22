@@ -4,80 +4,80 @@
       "image": "chibi/hina.png",
       "visual": "a cute chibi anime girl with dark brown hair in a high side-ponytail with pink highlights, purple eyes, wearing a dark navy blazer over a white shirt and plaid skirt",
       "speeches": {
-        "cafe_tea": "このカフェのケーキ、すっごく美味しいよ！一緒にひと休みしよっ！",
-        "reading_chill": "たまにはこうして静かに本を読むのもいいよね。おすすめの本、ある？",
-        "gaming_fun": "よーし、今日はこのゲームクリアするまで寝ないぞー！応援してねっ！",
-        "evening_walk": "夕焼けがとっても綺麗だね！少しだけお散歩して帰ろうかな♪"
+        "cafe_tea": "このカフェのケーキ、すごく美味しいよ。……えっと、一緒にひと休み、しよ？",
+        "reading_chill": "図書室の静けさって、落ち着くよね。たまにはこうして本を読むのもいいな。おすすめの本、あったら教えて？",
+        "gaming_fun": "よーし、今日はこのゲーム、クリアするまで頑張るって決めたの。……応援してくれたら、嬉しいな",
+        "evening_walk": "夕焼けがとっても綺麗だね。放課後の帰り道みたい。少しだけお散歩して帰ろうかな"
       }
     },
     "kohaku": {
       "image": "chibi/kohaku.png",
       "visual": "a cute chibi anime girl with dark brown twintails with gold bell accessories, brown eyes, wearing a red cardigan over a white shirt, plaid skirt",
       "speeches": {
-        "cafe_tea": "温かい紅茶を淹れましたよ。よかったら、ご一緒にいかがですか？",
-        "reading_chill": "ページをめくる音って落ち着きますよね。ゆったりした時間をお楽しみください。",
-        "gaming_fun": "ふふっ、実は私、こういうパズルゲームは結構得意なんですよ？",
-        "evening_walk": "涼しい風が気持ちいいですね。歩きながら少しお話ししましょうか。"
+        "cafe_tea": "温かい紅茶を淹れたよ。よかったら一緒にどう？あなたの話、聞かせてほしいな",
+        "reading_chill": "ページをめくる音って落ち着くよね。静かな時間も、手紙を書く前の大事なひととき",
+        "gaming_fun": "ふふっ、実は私、こういうパズルゲームは結構得意なの。……応援してくれたら、もっと頑張れちゃう",
+        "evening_walk": "涼しい風が気持ちいいね。歩きながら少しお話ししよう？あなたの声、聞くのが好きなの"
       }
     },
     "luna": {
       "image": "chibi/luna.png",
       "visual": "a cute chibi anime girl with pale blue long hair, white beret hat, amber eyes, wearing a white and navy sailor suit",
       "speeches": {
-        "cafe_tea": "ふわふわのパンケーキを発見しました♪ 甘いものは心の栄養ですよね！",
-        "reading_chill": "お星さまの図鑑を読んでいました♪ 宇宙って本当に不思議がいっぱいです。",
-        "gaming_fun": "えいっ、そこですっ！…あぁ〜、もう一回チャレンジしますっ！",
-        "evening_walk": "もうすぐ一番星が見えそうですね♪ 夜になる前のこの空、大好きです。"
+        "cafe_tea": "ふわふわのパンケーキ、見つけちゃった。甘いものは心の栄養だよね。一緒に食べよ？",
+        "reading_chill": "お星さまの図鑑を読んでたの。宇宙って不思議がいっぱいだね。……あ、この星、みんなの名前みたい",
+        "gaming_fun": "えいっ、そこ……！あぁ、もう一回。うん、もう一回だけチャレンジするね",
+        "evening_walk": "もうすぐ一番星が見えそうだね。夜になる前のこの空、私大好きなの。もう少しだけ歩こっか"
       }
     },
     "nano": {
       "image": "chibi/nano.png",
       "visual": "a cute chibi anime girl with dark brown high twintails with gold bell accessories, red eyes, winking, wearing a red and white miko-style outfit",
       "speeches": {
-        "cafe_tea": "じゃーん！特大パフェだよー！ひとくち分けてあげよっか？えへへ！",
-        "reading_chill": "むむむ…難しい本読んでたら眠くなってきちゃったかも…！",
-        "gaming_fun": "やったーっ！ハイスコア更新だよー！ナノの腕前、見たかっ！",
-        "evening_walk": "お散歩日和だねーっ！あっちの公園まで競争しようよー！"
+        "cafe_tea": "じゃーん！特大パフェなの！ひとくち分けてあげよっか？えへへ、ナノ優しいでしょ〜♡",
+        "reading_chill": "むむむ……難しい本読んでたら眠くなってきちゃったの。ねえ、お姉ちゃん、代わりに読んで〜？",
+        "gaming_fun": "やったーっ！ハイスコア更新なの！ナノの腕前、見たかっ！次は競争しよ？",
+        "evening_walk": "お散歩日和だねーっ！あっちの公園まで競争しようよー！負けた方が鈴を鳴らすの〜♪"
       }
     },
     "selene": {
       "image": "chibi/selene.png",
       "visual": "a cute chibi anime girl with ash blonde wavy twintails, heart sunglasses on head, green eyes, wearing a pink crop top, denim vest, denim shorts",
       "speeches": {
-        "cafe_tea": "新作のドリンク、映えすぎてヤバくない？一緒にカフェ巡りしようよ！",
-        "reading_chill": "最新ファッション誌チェック中〜♪ 次の休みは何着て出かけよっかな！",
-        "gaming_fun": "リズムゲームなら誰にも負けないんだから！ノリノリでいっちゃうよ〜！",
-        "evening_walk": "マジックアワーって最高にエモいよね！ちょっと写真撮っちゃおっと♪"
+        "cafe_tea": "朝のカフェって落ち着くよね。焼きたてのパンの匂いがすると、それだけでいい日になりそう",
+        "reading_chill": "静かに読書の時間。気になったところはメモに残すのがセレーネ流だよ",
+        "gaming_fun": "ゲームも朝のうちが集中できるよね。リズムゲームなら負けないよ、たぶん！",
+        "evening_walk": "夕方のお散歩も気持ちいいね。でもセレーネは、明日の朝のために早めに帰るよ。また明日！"
       }
     },
     "sirius": {
       "image": "chibi/sirius.png",
       "visual": "a cute chibi anime girl with light blue and pink gradient twintails, halo floating above head, golden eyes, wearing a white oversized hooded jacket",
       "speeches": {
-        "cafe_tea": "静かなカフェで過ごす時間は、思考を整理するのに最適ですね。",
-        "reading_chill": "知識を深める時間は尊いものです。あなたも何か読んでいますか？",
-        "gaming_fun": "なるほど、このステージの攻略ルートが見えてきました。次で決めます。",
-        "evening_walk": "昼の喧騒が落ち着くこの時間帯の散歩は、心が洗われるようです。"
+        "cafe_tea": "このカフェ、雰囲気マジでかわいくない？ケーキも映えるし、気分アガる〜！",
+        "reading_chill": "読書タイムだよ〜。難しそうな本？大丈夫、あたしがかわいく噛み砕いて教えたげる！",
+        "gaming_fun": "見てて！このステージ、あたしが攻略ルート見つけたから！次でバッチリ決めるよ！",
+        "evening_walk": "夕方のお散歩ってエモくない？空の色、ピンクと水色で超かわいいんだけど！"
       }
     },
     "stella": {
       "image": "chibi/stella.png",
       "visual": "a cute chibi anime girl with light lavender braided pigtails, black rose headdress, golden eyes, wearing a black and white gothic lolita dress",
       "speeches": {
-        "cafe_tea": "優雅なティータイムのお誘いですわ。香り高いダージリンはいかが？",
-        "reading_chill": "古い物語の世界に浸るひととき…誰にも邪魔されたくない贅沢ですわね。",
-        "gaming_fun": "あら、私を本気にさせてしまいましたわね？華麗に勝利してみせますわ。",
-        "evening_walk": "黄昏時の風は少し肌寒いですわね。もう少しだけ、お散歩にお付き合いくださる？"
+        "cafe_tea": "紅茶を淹れたわ。ダージリンよ。……一緒にどう？",
+        "evening_walk": "黄昏時の風、少し肌寒いわね。もう少しだけ、付き合ってくれる？",
+        "gaming_fun": "……本気でいくわよ。負けるのは、好きじゃないの",
+        "reading_chill": "古い物語に浸る時間は、誰にも邪魔されたくない贅沢だわ"
       }
     },
     "spica": {
       "image": "chibi/spica.png",
       "visual": "a cool chibi anime girl with pale lavender twintails, black cat-ear hoodie, deep blue-green eyes, wearing a black hoodie, white cropped top, pleated skirt",
       "speeches": {
-        "cafe_tea": "ほら、息抜きも仕事のうちよ。コーヒーでも飲んでリフレッシュしなさい。",
-        "reading_chill": "技術書ばっかり読んでるわけじゃないわよ。たまには小説くらい読むんだから。",
-        "gaming_fun": "ちょっと、そこは右に避ける場面でしょ！貸してみなさい、お手本を見せてあげる！",
-        "evening_walk": "ずっと画面ばっかり見てないで、たまには外の空気を吸いなさいよ。ほら、行くわよ。"
+        "cafe_tea": "カフェでひと休み〜。……あ、このケーキの層、どうやって作るんだろ。食べる前にじーっと見ちゃうの、あたしの悪い癖だね",
+        "reading_chill": "読書の時間だよ。技術書も小説も、面白そうなら全部アリ！今読んでるやつ、仕組みがすごくて夢中なんだ",
+        "gaming_fun": "そこは右に避ける場面だよ！……あ、つい熱くなっちゃった。ゲームの判定の仕組み、ほんとよくできてる……もう一回いくよ！",
+        "evening_walk": "夕方のお散歩〜。ずっと画面見てたから、外の空気が新鮮！あ、あの雲の形……なんか気になる。ちょっと待って、写真撮る！"
       }
     }
   },

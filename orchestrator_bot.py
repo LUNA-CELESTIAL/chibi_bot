@@ -44,6 +44,8 @@ COMFYUI_HEALTH_RETRY_SEC = int(os.getenv("COMFYUI_HEALTH_RETRY_SEC", "15"))
 USE_OLLAMA_ARRANGE = os.getenv("USE_OLLAMA_ARRANGE", "false").strip().lower() == "true"
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen3.8-Q2:latest")
 RSS_CHECK_INTERVAL_MIN = int(os.getenv("RSS_CHECK_INTERVAL_MIN", "150"))
+# RSS友達シェア（動画版）は 2026-11-22 の編成見直しで一旦停止。ニュースは #lunachannel の声とテキスト側で扱う。再開する場合は ENABLE_RSS_FRIEND_VIDEO=true を設定する。
+RSS_FRIEND_VIDEO_ENABLED = os.getenv("ENABLE_RSS_FRIEND_VIDEO", "false").strip().lower() == "true"
 GPU_LOCK_FILE = os.getenv("GPU_LOCK_FILE", "/home/lulu/luna/luna_docker/shared_state/gpu.lock")
 
 SPINOFF_PROMPTS_FILE = os.path.join(os.path.dirname(__file__), "spinoff_prompts.json")
@@ -145,7 +147,10 @@ class ChibiOrchestratorBot(discord.Client):
     async def setup_hook(self):
         self.worker_task = asyncio.create_task(self.gpu_worker())
         self.schedule_loop.start()
-        self.rss_friend_loop.start()
+        if RSS_FRIEND_VIDEO_ENABLED:
+            self.rss_friend_loop.start()
+        else:
+            logger.info("📴 RSS友達シェア（動画版）は編成から外れているため起動しません。")
         asyncio.create_task(voice_rss_background_loop(self, VOICE_CHAT_CHANNEL_ID))
         asyncio.create_task(autonomous_spinoff_loop(self, DUTY_CHARACTERS, MAIN_CHANNEL_ID, arrange_speech_with_ollama, VideoTask))
         logger.info("GPU交通整理ワーカー・定時スケジューラ・RSS友達トリガーを起動しました。")

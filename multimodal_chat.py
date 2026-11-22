@@ -15,6 +15,7 @@ import urllib.parse
 import xml.etree.ElementTree as ET
 from pathlib import Path
 import discord
+from personas import PERSONAS
 from dotenv import load_dotenv
 
 try:
@@ -47,32 +48,8 @@ A2A_MAX_REPLIES = int(os.getenv("A2A_MAX_REPLIES", "3"))
 
 JST = datetime.timezone(datetime.timedelta(hours=9))
 
-SISTER_PROFILES = {
-    "luna": {
-        "name": "ルナ",
-        "persona": "明るく好奇心旺盛で友達感覚のタメ口。面白いアイデアや新しい技術、ワクワクする話題に目がなく、純粋に『これ面白くない！？』と目を輝かせて話す。"
-    },
-    "spica": {
-        "name": "スピカ",
-        "persona": "頼れる姉御肌で少しツンデレだけど愛情深いタメ口。仕組みの裏側や本質的な面白さに興味を持ち、ちょっと得意げに自分の見解を交えて話す。"
-    },
-    "sirius": {
-        "name": "シリウス",
-        "persona": "知的好奇心が旺盛で少しクールだけど優しいタメ口。論理的な仕組みや知識、不思議な現象に静かにテンションが上がり、知的に掘り下げて話す。"
-    },
-    "stella": {
-        "name": "ステラ",
-        "persona": "元気いっぱいで無邪気な妹のようなタメ口。楽しそうなこと、珍しいこと、ちょっとした豆知識に素直に驚いて感情豊かに話す。"
-    },
-    "selene": {
-        "name": "セレーネ",
-        "persona": "おっとり穏やかで優しいお姉さんのような口調。心地よい暮らしや物語、ちょっとした癒やしや興味深い出来事にふんわり共感しながら話す。"
-    },
-    "nano": {
-        "name": "ナノ",
-        "persona": "少しマイペースで素直な可愛いタメ口。ゲームやサブカル、ユニークな発想に独自のツボを持っていて、マイペースに感想を話す。"
-    },
-}
+_SISTER_KEYS = ("luna", "spica", "sirius", "stella", "selene", "nano")
+SISTER_PROFILES = {k: PERSONAS[k] for k in _SISTER_KEYS}
 
 CHAR_NAME_MAP = {v["name"]: k for k, v in SISTER_PROFILES.items()}
 

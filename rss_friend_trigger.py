@@ -9,6 +9,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 import ollama
 from video_generator import load_json_file
+from personas import PERSONAS
 
 logger = logging.getLogger("RssFriendTrigger")
 
@@ -18,13 +19,9 @@ SEEN_RSS_FILE = os.path.join(BASE_DIR, "seen_rss.json")
 SPINOFF_PROMPTS_FILE = os.path.join(BASE_DIR, "spinoff_prompts.json")
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen3.8-Q2:latest")
 
+# 人格定義は personas.py に一本化（正は sweet-bits の設定）
 CHAR_PERSONA_GUIDE = {
-    "luna": "ルナ（明るく好奇心旺盛なムードメーカー。「〜だね！」「〜だよ！」と親しみやすく元気に話す）",
-    "spica": "スピカ（面倒見がよく知的な姉御肌。「〜だね」「〜わよ」「〜じゃない？」と少し大人っぽく論理的に話す）",
-    "sirius": "シリウス（冷静沈着な分析家。「〜だ」「〜だろう」「興味深いな」と落ち着いた知的なトーンで話す）",
-    "stella": "ステラ（元気で無邪気な妹キャラ。「〜だよっ！」「すごーい！」「〜かな？」と明るく弾む口調で話す。お嬢様口調は禁止）",
-    "selene": "セレーネ（穏やかで詩的・優しいお姉さん。「〜ですね」「〜かもしれませんね」と丁寧で柔らかく話す）",
-    "nano": "ナノ（メカと効率が大好きな理系っ子。「〜なのだ！」「〜って仕組みだよ！」とテンポよく技術好きらしく話す）",
+    k: f"{v['name']}（{v['persona']}）" for k, v in PERSONAS.items()
 }
 
 

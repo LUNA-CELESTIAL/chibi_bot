@@ -454,16 +454,17 @@ def _generate_structured_reply_sync(
 
 
 def _format_structured_discord_message(rec: dict, include_article_footer: bool = False) -> str:
-    """A案：Discord上で論点が一目で追える構造化カード形式に整形"""
-    lines = [
-        f"**【{rec['speaker']}】**",
-        f"📌 **[{rec['topic']}について]**",
-    ]
-    if rec.get("summary"):
-        lines.append(f"📝 **[要約]** {rec['summary']}")
+    """v2：本人の考えを先頭に置き、要約と出典は後ろに回す形式。
+
+    トピック見出し行は廃止し、記事タイトルは出典リンクが兼ねる
+    （「〜について」の二重化もこれで起きない）。
+    """
+    lines = [f"**【{rec['speaker']}】**"]
     if rec.get("thought"):
-        lines.append(f"💭 **[考えたこと]** {rec['thought']}")
-    lines.append(f"🗣️ **[ボイス]** 『{rec['speech']}』")
+        lines.append(f"💭 {rec['thought']}")
+    lines.append(f"🗣️ 『{rec['speech']}』")
+    if rec.get("summary"):
+        lines.append(f"📝 要約：{rec['summary']}")
 
     if include_article_footer and rec.get("url"):
         tags_str = " ".join(rec.get("tags", []))
